@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded',function(){
         if(event.key == 'Enter')
             addTask();
     });
-    addTask();
+    //addTask();
 
 
 });
