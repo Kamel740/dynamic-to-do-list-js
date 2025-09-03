@@ -27,6 +27,11 @@ document.addEventListener('DOMContentLoaded',function(){
 
             li_Item.appendChild(btn);
             taskList.appendChild(li_Item);
+
+            btn.onclick=()=>{
+                li_Item.remove();
+                saveTasks();
+            }
         });
 
     }
@@ -47,6 +52,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
             remove_button.onclick = ()=>{
                 taskElement.remove();
+                saveTasks();
             };
             taskElement.appendChild(remove_button);
             taskList.appendChild(taskElement);
